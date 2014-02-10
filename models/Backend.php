@@ -2,13 +2,11 @@
 
 namespace keymedia\models;
 
-use \stdclass;
 use \Exception;
 
 class Backend extends \eZPersistentObject
 {
     protected $connectors = array(
-        '1' => 'keymedia\\models\\v1\\Connector',
         '2' => 'keymedia\\models\\v2\\Connector',
     );
 

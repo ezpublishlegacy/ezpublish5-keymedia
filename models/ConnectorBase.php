@@ -102,7 +102,6 @@ abstract class ConnectorBase implements ConnectorInterface
     protected function makeRequest($action, array $params = array(), $method = 'GET')
     {
         ksort($params);
-        $headers = array();
         $method = strtoupper($method);
         $params = array_filter($params);
 

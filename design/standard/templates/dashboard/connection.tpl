@@ -26,15 +26,11 @@
     </label>
 
     <label>
-        <span>{'API version'|i18n( 'keymedia/add_connection' )}</span>
         {def $version = 2}
         {if $backend}
             {set $version = $backend.api_version}
         {/if}
-        <select name="api_version">
-            <option value="1"{if eq($version, 1)} selected="selected"{/if}>Version 1</option>
-            <option value="2"{if eq($version, 2)} selected="selected"{/if}>Version 2</option>
-        </select>
+        <input type="hidden" name="api_version" value="2" />
     </label>
 
     <input type="hidden" name="redirect_to" value={'/key_media/connection'|ezurl} />

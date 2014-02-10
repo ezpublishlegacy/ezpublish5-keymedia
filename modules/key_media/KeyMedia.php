@@ -58,7 +58,7 @@ class KeyMedia extends \ezote\lib\Controller
             $api_version = self::$http->variable('api_version', false);
 
             $data = compact('id', 'username', 'host', 'api_key', 'api_version');
-
+            
             $this->save($backend, $data);
 
             if ($redirectTo = self::$http->variable('redirect_to', false)) {

@@ -5,7 +5,7 @@ use \keymedia\models\media\Handler;
 
 class KeyMedia extends eZDataType
 {
-	const DATA_TYPE_STRING = 'keymedia';
+    const DATA_TYPE_STRING = 'keymedia';
     const FIELD_BACKEND = 'data_int1';
     const FIELD_JSON = 'data_text5';
     const FIELD_VALUE = 'data_text';

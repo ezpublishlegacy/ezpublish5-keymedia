@@ -2,10 +2,8 @@
 
 namespace keymedia\models\media;
 
-use \eZMimeType;
 use \eZHTTPFile;
 use \eZContentObjectVersion;
-use \eZURLAliasML;
 use \ezpI18n;
 use \keymedia\models\Backend;
 use \keymedia\models\Media;
